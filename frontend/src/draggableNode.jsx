@@ -13,7 +13,7 @@ export const DraggableNode = ({ type, label, style }) => {
   const defaultStyle = {
     cursor: 'grab',
     minWidth: '80px',
-    height: '60px',
+    height: '55px',
     display: 'flex',
     alignItems: 'center',
     borderRadius: '8px',
@@ -29,10 +29,10 @@ export const DraggableNode = ({ type, label, style }) => {
       className={type}
       onDragStart={(event) => onDragStart(event, type)}
       onDragEnd={(event) => (event.target.style.cursor = 'grab')}
-      style={{ ...defaultStyle, ...style }}
+      style={{...defaultStyle, ...style}}
       draggable
     >
-      <span style={{ color: '#ab8585' }}>{label}</span>
+      <span style={{ color: '#fff' }}>{label}</span>
     </div>
   );
 };

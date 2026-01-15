@@ -108,7 +108,8 @@ export const PipelineUI = () => {
 
   return (
     <>
-      <div ref={reactFlowWrapper} style={{ width: '100wv', height: '70vh', border: "1px solid red", backgroundColor: "lightpink" }}>
+      {/*  flowchart area zoom in out, center area where map and zoom */}
+      <div ref={reactFlowWrapper} style={{ width: '100wv', height: '70vh', backgroundColor: "#f7b9c9" }}>
         <ReactFlow
           nodes={nodes}
           edges={edges}
@@ -123,12 +124,12 @@ export const PipelineUI = () => {
           snapGrid={[gridSize, gridSize]}
           connectionLineType='smoothstep'
         >
-          <Background color="#aaa" gap={gridSize} />
+          <Background variant="cross" color="white" gap={30} />
 
           <Controls />
           {/*  all  + - lock  */}
 
-          <MiniMap style={{ backgroundColor: "lightgreen" }} />
+          <MiniMap style={{ backgroundColor: "#A855F7" }} />
           {/*  side looking map */}
 
         </ReactFlow>
@@ -136,3 +137,4 @@ export const PipelineUI = () => {
     </>
   )
 }
+
