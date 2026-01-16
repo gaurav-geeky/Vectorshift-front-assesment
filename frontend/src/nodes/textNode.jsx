@@ -7,7 +7,7 @@ export default function TextNode({ id, data }) {
   const [text, setText] = useState(data?.text || "");
   const textRef = useRef(null);
 
-  // Regex to detect variables like {{ name }}
+  // Regex to detect only variables like {{ name }}
   const regex = /{{\s*([a-zA-Z_$][a-zA-Z0-9_$]*)\s*}}/g;
   const variables = [...text.matchAll(regex)].map((match) => match[1]);
 
@@ -54,25 +54,7 @@ export default function TextNode({ id, data }) {
 
 
 
-//  FULL TEXTNODE CODE EXPLANATION — LINE BY LINE   search in tech assesment guidance
 
-// import BaseNode from "./BaseNode";
-// import { useState } from "react";
-
-// export default function TextNode({ id, data }) {
-
-//   const [text, setText] = useState(data?.text || "{{input}}");
-
-//   return (
-//     <BaseNode
-//       title="Text"
-//       outputs={[{ id: `${id}-output`, top: "50%" }]}
-//     >
-//       <label>Text:</label>
-//       <input value={text} onChange={(e) => setText(e.target.value)} />
-//     </BaseNode>
-//   );
-// }
 
 
 

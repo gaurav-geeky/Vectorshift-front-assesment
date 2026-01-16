@@ -17,3 +17,4 @@ export default function InputNode({ id, data }) {
   );
 }
 
+

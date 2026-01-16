@@ -27,7 +27,6 @@ code {
 }
 
 .react-flow__controls-button:hover {
-  background: #ff8fb1 !important;
   fill: blue !important; 
   transform: scale(1.05);
 }
