@@ -8,6 +8,7 @@ export default function ConcatNode({ id, data }) {
 
     return (
         <BaseNode
+        style={{ backgroundColor: "#ffaaf4" }}
             title="Concat Node"
             inputs={[
                 { id: `${id}-text1`, top: "30%" },

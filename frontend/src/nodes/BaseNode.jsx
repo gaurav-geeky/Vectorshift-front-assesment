@@ -4,10 +4,17 @@ export default function BaseNode({
     title,
     inputs = [],
     outputs = [],
-    children
+    children,
+    style
 }) 
-
 {
+    const defaultStyle = {
+        margin: '0',
+        marginBottom: '10', 
+        backgroundColor: "#d4d4d4",
+    }
+
+
     return (
         <div style={{
             width: 220,
@@ -16,7 +23,7 @@ export default function BaseNode({
             borderRadius: 8,
             background: "#fff"
         }}>
-            <h4 style={{ margin: 0, marginBottom: 10 }}>{title}</h4> 
+            <h4 style={{ ...defaultStyle, ...style }}>{title}</h4>
 
             {/* Render target for left side handles */}
             {inputs.map((input, i) => (

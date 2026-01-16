@@ -6,7 +6,8 @@ export default function FormatNode({ id, data }) {
     const [format, setFormat] = useState(data?.format || "upper");
 
     return (
-        <BaseNode
+        <BaseNode 
+        style={{ backgroundColor: "#fdf9a5" }}
             title="Format Node"
             inputs={[{ id: `${id}-text`, top: "50%" }]}
             outputs={[{ id: `${id}-formatted`, top: "50%" }]}

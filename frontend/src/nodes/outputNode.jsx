@@ -8,6 +8,7 @@ export default function OutputNode({ id, data }) {
 
   return (
     <BaseNode
+    style={{ backgroundColor: "#dba1ff" }}
       title="Output"
       inputs={[{ id: `${id}-value`, top: "50%" }]}
     >

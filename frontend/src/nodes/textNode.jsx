@@ -26,7 +26,7 @@ export default function TextNode({ id, data }) {
 
   return (
     <BaseNode
-      style={{ backgroundColor: "yellow" }}
+      style={{ backgroundColor: "#99b4ff" }}
       title="Text"
       inputs={variables.map((v, i) => ({
         id: `${id}-${v}`,
@@ -34,7 +34,7 @@ export default function TextNode({ id, data }) {
       }))}
       outputs={[{ id: `${id}-output`, top: "50%" }]}
     >
-      <label style={{ backgroundColor: "lightgreen" }}>Text:</label>
+      <label >Text:</label>
       <textarea
         ref={textRef}
         value={text}
@@ -44,17 +44,13 @@ export default function TextNode({ id, data }) {
           minHeight: "40px",
           resize: "none",
           overflow: "hidden",
-          backgroundColor: "cyan"
+          backgroundColor: "cyan", 
+          borderRadius: 4,
         }}
       />
-
     </BaseNode>
   );
 }
-
-
-
-
 
 
 

@@ -5,7 +5,8 @@ export default function ConditionNode({ id, data }) {
   const [operator, setOperator] = useState(data?.operator || ">");
 
   return (
-    <BaseNode
+    <BaseNode 
+    style={{ backgroundColor: "#788afe" }}
       title="Condition Node"
       inputs={[
         { id: `${id}-left`, top: "30%" },   // Left value

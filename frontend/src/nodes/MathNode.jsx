@@ -8,6 +8,7 @@ export default function MathNode({ id, data }) {
 
     return (
         <BaseNode
+        style={{ backgroundColor: "#f9d9a1" }}
             title="Math Node"
             inputs={[
                 { id: `${id}-a`, top: "30%" },

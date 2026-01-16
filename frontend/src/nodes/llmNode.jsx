@@ -4,6 +4,7 @@ export default function LLMNode({ id }) {
   
   return (
     <BaseNode
+    style={{ backgroundColor: "#98ffcd" }}
       title="LLM"
       inputs={[
         { id: `${id}-system`, top: "33%" },

@@ -3,6 +3,7 @@ import BaseNode from "./BaseNode";
 export default function LogNode({ id, data }) {
   return (
     <BaseNode
+    style={{ backgroundColor: "#ffa5a5" }}
       title="Log Node"
       inputs={[{ id: `${id}-input`, top: "50%" }]}
     >
